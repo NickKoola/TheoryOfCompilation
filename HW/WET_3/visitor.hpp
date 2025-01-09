@@ -43,7 +43,7 @@ public:
     virtual void visit(ast::ID &node) = 0;
 
     virtual void visit(ast::BinOp &node) = 0;
-
+    
     virtual void visit(ast::RelOp &node) = 0;
 
     virtual void visit(ast::Not &node) = 0;
@@ -83,6 +83,7 @@ public:
     virtual void visit(ast::FuncDecl &node) = 0;
 
     virtual void visit(ast::Funcs &node) = 0;
+    
 };
 
 #endif //VISITOR_HPP
